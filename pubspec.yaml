@@ -2,7 +2,8 @@ name: paparazzi
 description: A Flutter package to convert widget into an image.
 version: 0.0.1
 author: https://github.com/loicgeek
-homepage:
+homepage: https://github.com/loicgeek/paparazzi
+repository: https://github.com/loicgeek/paparazzi
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
