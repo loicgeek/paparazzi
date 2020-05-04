@@ -15,7 +15,8 @@ class PaparazziS {
   /// Creates an image from the given widget by first spinning up a element and render tree,
   /// then waiting for the given [wait] amount of time and then creating an image via a [RepaintBoundary].
   ///
-  /// The final image will be of size [imageSize] and the the widget will be layout, ... with the given [logicalSize].
+  /// The final image will be of size [imageSize] and the the widget will be layout , ... with the given [logicalSize].
+  /// #example: use the result with Image.memory
   Future<Uint8List> shot(Widget widget,
       {Duration wait, Size logicalSize, Size imageSize}) async {
     final RenderRepaintBoundary repaintBoundary = RenderRepaintBoundary();

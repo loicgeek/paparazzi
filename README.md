@@ -52,13 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: container
+        child: Column(children:[
+            container,
+        ])
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: ()async {
             Uint8List pngBytes =await Paparazzi.shot(container);
-            // do what you want with that;
+            // do what you want with that; with Image.memory for example
         },
         tooltip: 'Pint button',
         child: Icon(Icons.printer),
